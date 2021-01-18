@@ -7,12 +7,17 @@
 body {
 	background: linear-gradient(
 		to right top,
-		#00ffff,
-		#65dfc9
+		#80c3a3,
+		#55693c
 	);
 }
 
 main {
+	/* background: linear-gradient(
+		to right top,
+		#00ffff,
+		#65dfc9
+	); */
 	min-height: 100vh;
 	display: flex;
 	align-items: center;
@@ -47,7 +52,7 @@ main {
 	background: white;
 	background: linear-gradient(
 		to right bottom,
-		rgba(255, 255, 255, 0.7),
+		rgba(255, 255, 255, 1),
 		rgba(255, 255, 255, 0.3)
 	);
 	height: 20rem;
@@ -58,10 +63,49 @@ main {
 
 .circle1 {
 	bottom: 5%;
-	left: 10%;
+	left: 5%;
+	animation: sildeInFromTop 1s ease-in-out;
 }
 
 .circle2 {
 	top: 5%;
 	right: 10%;
+	animation: sildeInFromBottom 1s ease-in-out;
+}
+
+/* Animation */
+@keyframes sildeInFromLeft {
+	0% {
+		transform: translateX(-100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes sildeInFromRight {
+	0% {
+		transform: translateX(100%);
+	}
+	100% {
+		transform: translateX(0%);
+	}
+}
+
+@keyframes sildeInFromTop {
+	0% {
+		transform: translateY(-100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+@keyframes sildeInFromBottom {
+	0% {
+		transform: translateY(100%);
+	}
+	100% {
+		transform: translateY(0%);
+	}
 }
