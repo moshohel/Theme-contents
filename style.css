@@ -29,16 +29,16 @@ main {
 	/* background: white; */
 	background: linear-gradient(
 		to right bottom,
-		rgba(255, 255, 255, 0.7),
-		rgba(255, 255, 255, 0.3)
+		rgba(255, 255, 255, 0.5),
+		rgba(255, 255, 255, 0.1)
 	);
-	border-radius: 2rem;
+	border-radius: 1rem;
 	z-index: 3;
 	backdrop-filter: blur(2rem);
 }
 
 .glass1 {
-	min-height: 60vh;
+	min-height: 70vh;
 	width: 70%;
 }
 
@@ -52,19 +52,19 @@ main {
 	background: white;
 	background: linear-gradient(
 		to right bottom,
-		rgba(255, 255, 255, 1),
+		rgba(255, 255, 255, 0.7),
 		rgba(255, 255, 255, 0.3)
 	);
-	height: 20rem;
-	width: 20rem;
+	height: 14rem;
+	width: 14rem;
 	position: absolute;
 	border-radius: 50%;
 }
 
 .circle1 {
-	bottom: 5%;
-	left: 5%;
-	animation: sildeInFromTop 1s ease-in-out;
+	bottom: 10%;
+	left: 8%;
+	animation: sildeInFromTop 1s ease-in;
 }
 
 .circle2 {
@@ -95,6 +95,12 @@ main {
 @keyframes sildeInFromTop {
 	0% {
 		transform: translateY(-100%);
+	}
+	50% {
+		transform: translateY(0%);
+	}
+	75% {
+		transform: translateY(25%);
 	}
 	100% {
 		transform: translateY(0%);
