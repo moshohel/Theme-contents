@@ -24,8 +24,7 @@ main {
 	justify-content: center;
 }
 
-.glass1,
-.glass2 {
+.glass {
 	/* background: white; */
 	background: linear-gradient(
 		to right bottom,
@@ -38,8 +37,9 @@ main {
 }
 
 .glass1 {
-	min-height: 70vh;
+	min-height: 80vh;
 	width: 70%;
+	display: flex;
 }
 
 .glass2 {
@@ -71,6 +71,18 @@ main {
 	top: 5%;
 	right: 10%;
 	animation: sildeInFromBottom 1s ease-in-out;
+}
+
+.dashboard {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.games {
+	flex: 2;
 }
 
 /* Animation */
